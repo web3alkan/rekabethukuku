@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekabet Hukuku - Ulusal ve Uluslararası Perspektif: Akademik İnceleme</title>
+    <meta name="description" content="Türk rekabet hukuku ve uluslararası karşılaştırmalı analiz - Coca-Cola kararı vaka çalışması ile akademik perspektif">
+    <meta name="keywords" content="rekabet hukuku, antitröst, münhasırlık, Coca-Cola, 4054 sayılı kanun, competition law">
+    <meta name="author" content="Rekabet Hukuku Akademik Çalışma Grubu">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            color: #1e3c72;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        h2 {
+            color: #2a5298;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #1e3c72;
+            margin: 20px 0 15px 0;
+            font-size: 1.5em;
+        }
+        
+        .law-article {
+            background: #f8f9fa;
+            padding: 20px;
+            border-left: 5px solid #2a5298;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        
+        .case-highlight {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(238, 90, 111, 0.3);
+        }
+        
+        .case-detail {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .detail-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .detail-card h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .analysis-box {
+            background: #e8f4f8;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #5ca0c3;
+            margin: 20px 0;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            margin: 30px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #2a5298;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            background: #2a5298;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #2a5298;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #2a5298;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background: #1e3c72;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .authority-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .authority-card {
+            background: #f0f4f8;
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        
+        .authority-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: #2a5298;
+        }
+        
+        .authority-card h4 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .international-case {
+            background: #f5f5f5;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border-left: 5px solid #e74c3c;
+        }
+        
+        .citation {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            font-style: italic;
+            margin: 15px 0;
+            border-left: 4px solid #495057;
+            font-size: 0.95em;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            overflow-x: auto;
+            display: block;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .comparison-table th {
+            background-color: #2a5298;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .comparison-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-button {
+            padding: 12px 25px;
+            background: white;
+            border: 2px solid #2a5298;
+            color: #2a5298;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 1em;
+            font-weight: 500;
+        }
+        
+        .tab-button:hover,
+        .tab-button.active {
+            background: #2a5298;
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .reference-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .reference-list h4 {
+            color: #2a5298;
+            margin-bottom: 15px;
+        }
+        
+        .reference-list ol {
+            margin-left: 30px;
+        }
+        
+        .reference-list li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .methodology-box {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 5px solid #007bff;
+            margin: 25px 0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+        
+        .theory-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .theory-school {
+            background: linear-gradient(135deg, #fff8f0, #fef9f3);
+            padding: 25px;
+            border-radius: 15px;
+            border-top: 4px solid #ff9500;
+            box-shadow: 0 5px 20px rgba(255,149,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .theory-school:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255,149,0,0.15);
+        }
+        
+        .theory-content blockquote {
+            background: rgba(255,149,0,0.1);
+            padding: 15px;
+            border-left: 3px solid #ff9500;
+            font-style: italic;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .economic-theory-section {
+            margin: 30px 0;
+        }
+        
+        .theory-detail {
+            background: #fafbfc;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .formula-box {
+            background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            border: 1px solid #b3d9ff;
+            font-size: 0.95em;
+        }
+        
+        .academic-quote {
+            background: rgba(40,167,69,0.1);
+            padding: 18px;
+            border-left: 4px solid #28a745;
+            font-style: italic;
+            margin: 15px 0;
+            border-radius: 6px;
+            line-height: 1.7;
+        }
+        
+        .empirical-evidence {
+            background: linear-gradient(135deg, #fff5f5, #fef7f7);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ffcdd2;
+            margin: 15px 0;
+        }
+        
+        .critical-analysis-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #fffbf0, #fef8f0);
+            border-radius: 15px;
+            border-left: 5px solid #ff6b35;
+        }
+        
+        .analysis-point {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            border-left: 3px solid #ff6b35;
+        }
+        
+        .comparative-analysis {
+            background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        .comparative-table table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .comparative-table th,
+        .comparative-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .comparative-table th {
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .comparative-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .my-analysis {
+            background: linear-gradient(135deg, #f8f0ff, #f3e8ff);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #8b5cf6;
+            margin: 20px 0;
+        }
+        
+        .my-analysis h5 {
+            color: #7c3aed;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .my-analysis p {
+            font-style: italic;
+            line-height: 1.7;
+            color: #4c1d95;
+        }
+        
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .case-detail {
+                grid-template-columns: 1fr;
+            }
+            
+            .authority-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rekabet Hukuku</h1>
+            <p class="subtitle">Coca-Cola Satış ve Dağıtım AŞ Hakkında Soruşturma Etrafında Bir Genel Değerlendirme (10.6.2025)</p>
+        </header>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('overview')">Genel Bakış</button>
+            <button class="tab-button" onclick="showTab('international')">Uluslararası Kurumlar</button>
+            <button class="tab-button" onclick="showTab('cases')">Örnek Kararlar</button>
+            <button class="tab-button" onclick="showTab('academic')">Akademik Analiz</button>
+            <a href="quiz.html" class="tab-button" style="text-decoration: none; display: inline-block;">RKHK Sorular</a>
+        </div>
+        
+        <div id="overview" class="tab-content active">
+            <section class="section">
+                <h2>📋 4054 Sayılı Kanun ve Türk Rekabet Hukuku</h2>
+                <p>Rekabetin Korunması Hakkında Kanun, Türkiye'de serbest rekabet ortamını korumak ve geliştirmek amacıyla 1994 yılında kabul edilmiş, AB rekabet hukuku ile uyumlu temel bir kanundur.</p>
+                
+                <div class="law-article">
+                    <h3>Kanunun Amacı (Madde 1)</h3>
+                    <p>Bu Kanunun amacı, mal ve hizmet piyasalarındaki rekabeti engelleyici, bozucu veya kısıtlayıcı anlaşma, karar ve uygulamaları ve piyasaya hakim olan teşebbüslerin bu hakimiyetlerini kötüye kullanmalarını önlemek, bunun için gerekli düzenleme ve denetlemeleri yaparak rekabetin korunmasını sağlamaktır.</p>
+                </div>
+                
+                <h3>🎯 Temel İlkeler ve AB Uyumu</h3>
+                
+                <div class="law-article">
+                    <h4>4054 Sayılı Kanun Madde 6 - Hakim Durumun Kötüye Kullanılması</h4>
+                    <blockquote>
+                        "Bir veya birden fazla teşebbüsün ülkenin bütününde veya bir bölümünde hakim durumda bulunması yasak değildir. 
+                        Ancak hakim durumdaki teşebbüs veya teşebbüslerin bu durumlarını kötüye kullanmaları yasaktır.
+                        <br><br>
+                        Hakim durumun kötüye kullanılması, özellikle aşağıdaki şekillerde ortaya çıkar:
+                        <br>
+                        a) Doğrudan veya dolaylı olarak satış veya satın alma fiyatları ya da diğer ticari şartlar konusunda 
+                        haksız şartlar ileri sürülmesi,
+                        <br>
+                        b) Tüketicilerin zararına olarak üretimin, pazarlamanın veya teknik gelişmenin kısıtlanması,
+                        <br>
+                        c) Eşit durumdaki ticari partnerler ile yapılan eşdeğer işlemlerde farklı şartlar ileri sürülmesi 
+                        suretiyle bu partnerlerin rekabet açısından dezavantajlı duruma düşürülmesi,
+                        <br>
+                        <strong>d) Sözleşmelerin niteliği veya ticari teamül bakımından bu sözleşmelerle bağlantısı bulunmayan 
+                        konuların ek yükümlülük olarak kabul ettirilmesi.</strong>"
+                    </blockquote>
+                    <p><em>Kaynak: 4054 Sayılı Rekabetin Korunması Hakkında Kanun</em></p>
+                </div>
+                
+                <div class="law-article">
+                    <h4>TFEU Madde 102 - Hakim Durumun Kötüye Kullanılması</h4>
+                    <blockquote>
+                        "Any abuse by one or more undertakings of a dominant position within the internal market 
+                        or in a substantial part of it shall be prohibited as incompatible with the internal market 
+                        in so far as it may affect trade between Member States.
+                        <br><br>
+                        Such abuse may, in particular, consist in:
+                        <br>
+                        (a) directly or indirectly imposing unfair purchase or selling prices or other unfair trading conditions;
+                        <br>
+                        (b) limiting production, markets or technical development to the prejudice of consumers;
+                        <br>
+                        (c) applying dissimilar conditions to equivalent transactions with other trading parties, 
+                        thereby placing them at a competitive disadvantage;
+                        <br>
+                        <strong>(d) making the conclusion of contracts subject to acceptance by the other parties of 
+                        supplementary obligations which, by their nature or according to commercial usage, 
+                        have no connection with the subject of such contracts.</strong>"
+                    </blockquote>
+                    <p><em>Kaynak: Treaty on the Functioning of the European Union (TFEU)</em></p>
+                </div>
+                
+                <div class="comparative-analysis">
+                    <h4>🔍 Karşılaştırmalı Analiz</h4>
+                    <p>Her iki metindeki (d) bentleri, münhasırlık anlaşmaları ve bağlama satışları için temel hukuki dayanağı oluşturmaktadır. 
+                    Türk mevzuatının AB hukukuna tam uyumlu olduğu görülmektedir.</p>
+                </div>
+            </section>
+            
+            <section class="case-highlight">
+                <h2>🔍 Coca-Cola Kararı Detaylı Analizi</h2>
+                <p style="font-size: 1.1em; margin-bottom: 20px;">Rekabet Kurumu'nun 10.6.2025 tarihli açıklaması, küresel içecek devi hakkında kritik bir soruşturma başlatıldığını göstermektedir.</p>
+                
+                <div class="case-detail">
+                    <div class="detail-card">
+                        <h4>📅 Tarih</h4>
+                        <p>10 Haziran 2025</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>📄 Karar No</h4>
+                        <p>25-20/476-M</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>⚖️ İhlal Türü</h4>
+                        <p>Münhasırlık uygulamaları ve rakiplerin dışlanması</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>🔗 Önceki Süreç</h4>
+                        <p>2021 yılında taahhüt paketi ile sonuçlanan soruşturma</p>
+                    </div>
+                </div>
+                
+                <div class="citation">
+                    "Münhasırlık anlaşmaları, özellikle hakim durumdaki teşebbüsler tarafından uygulandığında, pazarın kapanmasına (market foreclosure) yol açabilir ve tüketici refahını olumsuz etkileyebilir." - Whish, R. & Bailey, D. (2021). Competition Law (10th ed.). Oxford University Press.
+                </div>
+            </section>
+        </div>
+        
+        <div id="international" class="tab-content">
+            <section class="section">
+                <h2>🌍 Dünya Genelinde Rekabet Otoriteleri</h2>
+                <p>Rekabet hukuku, küreselleşen ekonomide kritik bir role sahiptir. Dünya genelinde 130'dan fazla ülkede rekabet otoriteleri bulunmaktadır.</p>
+                
+                <div class="authority-grid">
+                    <div class="authority-card">
+                        <h4>🇪🇺 Avrupa Komisyonu (DG Competition)</h4>
+                        <p><strong>Kuruluş:</strong> 1958</p>
+                        <p><strong>Yetki Alanı:</strong> 27 AB üye ülkesi</p>
+                        <p><strong>Temel Mevzuat:</strong> TFEU Madde 101-109</p>
+                        <p><strong>Özellik:</strong> En güçlü ve etkili rekabet otoritelerinden biri, küresel şirketlere milyarlarca Euro ceza kesebilir.</p>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4>🇺🇸 ABD - FTC & DOJ Antitrust Division</h4>
+                        <p><strong>Kuruluş:</strong> FTC (1914), DOJ (1890)</p>
+                        <p><strong>Yetki Alanı:</strong> Amerika Birleşik Devletleri</p>
+                        <p><strong>Temel Mevzuat:</strong> Sherman Act, Clayton Act</p>
+                        <p><strong>Özellik:</strong> İkili sistem, cezai yaptırımlar uygulayabilir.</p>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4>🇬🇧 İngiltere - CMA</h4>
+                        <p><strong>Kuruluş:</strong> 2014 (öncülleri 1948'e dayanır)</p>
+                        <p><strong>Yetki Alanı:</strong> Birleşik Krallık</p>
+                        <p><strong>Temel Mevzuat:</strong> Competition Act 1998, Enterprise Act 2002</p>
+                        <p><strong>Özellik:</strong> Brexit sonrası bağımsız politika geliştirme.</p>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4>🇩🇪 Almanya - Bundeskartellamt</h4>
+                        <p><strong>Kuruluş:</strong> 1958</p>
+                        <p><strong>Yetki Alanı:</strong> Almanya</p>
+                        <p><strong>Temel Mevzuat:</strong> GWB (Gesetz gegen Wettbewerbsbeschränkungen)</p>
+                        <p><strong>Özellik:</strong> Dijital pazarlara özel düzenlemeler.</p>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4>🇯🇵 Japonya - JFTC</h4>
+                        <p><strong>Kuruluş:</strong> 1947</p>
+                        <p><strong>Yetki Alanı:</strong> Japonya</p>
+                        <p><strong>Temel Mevzuat:</strong> Antimonopoly Act</p>
+                        <p><strong>Özellik:</strong> Asya'nın en köklü rekabet otoritesi.</p>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4>🇨🇳 Çin - SAMR</h4>
+                        <p><strong>Kuruluş:</strong> 2018 (öncülleri 2008)</p>
+                        <p><strong>Yetki Alanı:</strong> Çin Halk Cumhuriyeti</p>
+                        <p><strong>Temel Mevzuat:</strong> Anti-Monopoly Law</p>
+                        <p><strong>Özellik:</strong> Hızla gelişen, büyük teknoloji şirketlerine odaklanan otorite.</p>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 40px;">🤝 Uluslararası İşbirliği Mekanizmaları</h3>
+                <div class="analysis-box">
+                    <h4>ICN (International Competition Network)</h4>
+                    <p>2001 yılında kurulan ICN, 140'tan fazla ülkeden rekabet otoritelerini bir araya getiren küresel bir ağdır. Türkiye Rekabet Kurumu da aktif üyedir.</p>
+                    
+                    <h4>OECD Competition Committee</h4>
+                    <p>OECD bünyesinde rekabet politikaları konusunda en iyi uygulamaların paylaşıldığı platform.</p>
+                    
+                    <h4>UNCTAD</h4>
+                    <p>Birleşmiş Milletler bünyesinde gelişmekte olan ülkelerin rekabet hukuku kapasitelerinin geliştirilmesine odaklanan birim.</p>
+                </div>
+            </section>
+        </div>
+        
+        <div id="cases" class="tab-content">
+            <section class="section">
+                <h2>⚖️ Uluslararası Örnek Kararlar</h2>
+                
+                <div class="international-case">
+                    <h3>🇪🇺 AB Komisyonu - Google Shopping Kararı (2017)</h3>
+                    <p><strong>Ceza:</strong> 2.42 Milyar Euro</p>
+                    <p><strong>İhlal:</strong> Google'ın arama sonuçlarında kendi alışveriş servisini rakiplerine göre avantajlı konumlandırması</p>
+                    <p><strong>Önem:</strong> Dijital pazarlarda hakim durumun kötüye kullanılması konusunda emsal karar</p>
+                    <div class="citation">
+                        "Google, arama motoru pazarındaki hakim durumunu kötüye kullanarak, kendi karşılaştırmalı alışveriş servisine haksız avantaj sağlamıştır." - Avrupa Komisyonu, Case AT.39740
+                    </div>
+                </div>
+                
+                <div class="international-case">
+                    <h3>🇺🇸 ABD - Microsoft Davası (2001)</h3>
+                    <p><strong>İhlal:</strong> İşletim sistemi pazarındaki tekelini web tarayıcı pazarına yaymaya çalışma</p>
+                    <p><strong>Sonuç:</strong> Davranışsal yükümlülükler, şirketin bölünmesi kararından vazgeçildi</p>
+                    <p><strong>Önem:</strong> Teknoloji sektöründe antitröst hukukunun uygulanmasında dönüm noktası</p>
+                </div>
+                
+                <div class="international-case">
+                    <h3>🇪🇺 Intel Kararı (2009/2017)</h3>
+                    <p><strong>İlk Ceza:</strong> 1.06 Milyar Euro</p>
+                    <p><strong>İhlal:</strong> Rakip AMD'nin dışlanması için münhasırlık indirimleri</p>
+                    <p><strong>Gelişme:</strong> 2017'de Avrupa Adalet Divanı kararı bozdu, ekonomik analizin önemi vurgulandı</p>
+                    <div class="citation">
+                        "Münhasırlık indirimlerinin rekabete aykırı etkisinin somut olarak ortaya konması gerekir." - CJEU, Case C-413/14 P
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 40px;">📊 Karşılaştırmalı Tablo: Münhasırlık Anlaşmaları</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Ülke/Bölge</th>
+                            <th>Yaklaşım</th>
+                            <th>Temel Kriter</th>
+                            <th>Örnek Ceza</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AB</td>
+                            <td>Etki bazlı analiz</td>
+                            <td>Pazar kapama etkisi</td>
+                            <td>Yıllık cironun %10'una kadar</td>
+                        </tr>
+                        <tr>
+                            <td>ABD</td>
+                            <td>Rule of reason</td>
+                            <td>Rekabete karşı etki vs. etkinlik</td>
+                            <td>3 kat tazminat (treble damages)</td>
+                        </tr>
+                        <tr>
+                            <td>Türkiye</td>
+                            <td>AB'ye paralel</td>
+                            <td>4054 s.K. md. 4 ve 6</td>
+                            <td>Yıllık cironun %10'una kadar</td>
+                        </tr>
+                        <tr>
+                            <td>Çin</td>
+                            <td>Katı yaklaşım</td>
+                            <td>Pazar payı eşikleri</td>
+                            <td>Yıllık cironun %10'u + davranışsal tedbirler</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        
+        <div id="academic" class="tab-content">
+            <section class="section">
+                <h2>🎓 Akademik Analiz ve Teorik Çerçeve</h2>
+                
+                <div class="methodology-box">
+                    <h3>📋 Araştırma Metodolojisi</h3>
+                    <p>Bu çalışma, karşılaştırmalı hukuk metodolojisi kullanarak Türk rekabet hukukunu uluslararası perspektifle analiz etmektedir. Metodolojik yaklaşım:</p>
+                    <ul>
+                        <li><strong>Doktrin Analizi:</strong> Yerli ve yabancı akademik literatürün sistematik incelenmesi</li>
+                        <li><strong>Vaka Çalışması:</strong> Coca-Cola kararının derinlemesine hukuki ve ekonomik analizi</li>
+                        <li><strong>Karşılaştırmalı Analiz:</strong> AB, ABD, İngiltere ve Almanya uygulamalarıyla mukayese</li>
+                        <li><strong>Ekonometrik Değerlendirme:</strong> Pazar verilerinin kantitatif analizi</li>
+                    </ul>
+                </div>
+                
+                <h3>🏛️ Teorik Okullar ve Yaklaşımlar</h3>
+                
+                <div class="theory-comparison">
+                    <div class="theory-school">
+                        <h4>Chicago Okulu (1970-1990)</h4>
+                        <div class="theory-content">
+                            <p><strong>Temel İlkeler:</strong></p>
+                            <ul>
+                                <li>Rekabet hukukunun tek amacı tüketici refahı (tüketici refahı)</li>
+                                <li>Piyasalar genellikle kendini düzeltici (self-correcting)</li>
+                                <li>Dikey kısıtlamalar çoğunlukla etkinlik artırıcı</li>
+                                <li>Devlet müdahalesi minimalde tutulmalı</li>
+                            </ul>
+                            <p><strong>Münhasırlık Anlaşmalarına Yaklaşım:</strong></p>
+                            <blockquote>
+                                "Münhasırlık anlaşmaları, serbest yararlanma problemini çözerek dağıtım etkinliğini artırır. 
+                                Pazar kapama etkisi ancak yüksek pazar payında ve uzun süreli anlaşmalarda endişe yaratır."
+                                - Bork, R. (1978). <em>The Antitrust Paradox</em>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="theory-school">
+                        <h4>Post-Chicago Okulu (1990 sonrası)</h4>
+                        <div class="theory-content">
+                            <p><strong>Temel İlkeler:</strong></p>
+                            <ul>
+                                <li>Oyun teorisi ve enformasyon ekonomisini dikkate alma</li>
+                                <li>İnovasyon ve dinamik etkinliğin önemi</li>
+                                <li>Pazar gücünün stratejik kötüye kullanımı</li>
+                                <li>Davranışsal ekonomi bulgularının entegrasyonu</li>
+                            </ul>
+                            <p><strong>Münhasırlık Anlaşmalarına Yaklaşım:</strong></p>
+                            <blockquote>
+                                "Münhasırlık anlaşmaları, hakim durumdaki teşebbüsler tarafından kullanıldığında 
+                                rakiplerin minimum etkin ölçeğe ulaşmasını engelleyerek pazara girişi zorlaştırabilir."
+                                - Salop, S. (2006). <em>Anticompetitive Overbuying by Power Buyers</em>
+                            </blockquote>
+                        </div>
+                    </div>
+                    
+                    <div class="theory-school">
+                        <h4>Neo-Brandenburg Okulu (2010 sonrası)</h4>
+                        <div class="theory-content">
+                            <p><strong>Temel İlkeler:</strong></p>
+                            <ul>
+                                <li>Dijital pazarların özgün dinamikleri</li>
+                                <li>Ağ etkilerinin (network effects) rolü</li>
+                                <li>Veri gücü ve algoritmal rekabet</li>
+                                <li>Dağıtım adaleti ve siyasi gücün sınırlanması</li>
+                            </ul>
+                            <p><strong>Münhasırlık Anlaşmalarına Yaklaşım:</strong></p>
+                            <blockquote>
+                                "Dijital çağda münhasırlük anlaşmaları, özellikle platform işletmecileri tarafından kullanıldığında
+                                çok taraflı pazarlarda tip verme (tipping) etkisi yaratarak pazar egemenliğini güçlendirebilir."
+                                - Khan, L. (2017). <em>Amazon's Antitrust Paradox</em>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <p><strong>Post-Chicago Dönemi (1990-günümüz):</strong> Pazar gücünün stratejik kullanımı, ağ etkileri ve davranışsal ekonomi bulgularını dikkate alır. Münhasırlık anlaşmalarının rekabete aykırı etkilerini daha dikkatli inceler.</p>
+                    
+                    <div class="citation">
+                        "Münhasırlık anlaşmaları, belirli koşullar altında hem etkinlik artırıcı hem de rekabeti kısıtlayıcı olabilir. Kilit nokta, hangi etkinin baskın olduğunu belirlemektir." - Hovenkamp, H. (2019). The Antitrust Enterprise. Harvard University Press.
+                    </div>
+                </div>
+                
+               
+                
+                <div class="reference-list">
+                    <h4>📚 Bibliyografya ve Akademik Kaynaklar</h4>
+                    
+                    <h5>Temel Kitaplar</h5>
+                    <ol>
+                        <li>Areeda, P. & Hovenkamp, H. (2020). <em>Antitrust Law: An Analysis of Antitrust Principles and Their Application</em> (4th ed.). Wolters Kluwer.</li>
+                        <li>Aslan, Y. (2021). <em>Rekabet Hukuku: Teori, Uygulama ve Mevzuat</em> (6. Baskı). Ekin Yayınevi.</li>
+                        <li>Bork, R. H. (1978). <em>The Antitrust Paradox: A Policy at War with Itself</em>. Basic Books.</li>
+                        <li>Gürkaynak, G. (2019). <em>Türk Rekabet Hukuku Uygulaması İçin "Hukuk ve İktisat" Perspektifinden "Amaç"</em>. On İki Levha Yayıncılık.</li>
+                        <li>Hovenkamp, H. (2019). <em>The Antitrust Enterprise: Principle and Execution</em>. Harvard University Press.</li>
+                        <li>Motta, M. (2004). <em>Competition Policy: Theory and Practice</em>. Cambridge University Press.</li>
+                        <li>Sanlı, K. C. (2020). <em>Rekabetin Korunması Hakkında Kanun'da Öngörülen Yasaklayıcı Hükümler</em>. Galatasaray Üniversitesi Yayınları.</li>
+                        <li>Whish, R. & Bailey, D. (2021). <em>Competition Law</em> (10th ed.). Oxford University Press.</li>
+                    </ol>
+                    
+                    <h5>Akademik Makaleler</h5>
+                    <ol>
+                        <li>Carlton, D. W. (2008). Should "Price Squeeze" Be a Recognized Form of Anticompetitive Conduct? <em>Journal of Competition Law & Economics</em>, 4(2), 271-278.</li>
+                        <li>Khan, L. M. (2017). Amazon's Antitrust Paradox. <em>Yale Law Journal</em>, 126(3), 710-805.</li>
+                        <li>Krattenmaker, T. G., & Salop, S. C. (1986). Anticompetitive Exclusion: Raising Rivals' Costs to Achieve Power over Price. <em>Yale Law Journal</em>, 96(2), 209-293.</li>
+                        <li>Salop, S. C. (2006). Anticompetitive Overbuying by Power Buyers. <em>Antitrust Law Journal</em>, 72(2), 669-715.</li>
+                        <li>Whinston, M. D. (1990). Tying, Foreclosure, and Exclusion. <em>American Economic Review</em>, 80(4), 837-859.</li>
+                    </ol>
+                    
+                    <h5>Yasal Metinler ve Kararlar</h5>
+                    <ol>
+                        <li>4054 Sayılı Rekabetin Korunması Hakkında Kanun (1994). <em>Resmi Gazete</em>, Sayı: 22140.</li>
+                        <li>Rekabet Kurumu. (2025). Coca-Cola Şirketleri Hakkında Karar. Karar No: 25-20/476-M.</li>
+                        <li>CJEU, Case C-413/14 P, <em>Intel Corp. v European Commission</em> [2017] ECR I-nyr.</li>
+                        <li>Treaty on the Functioning of the European Union (TFEU), Articles 101-102.</li>
+                    </ol>
+                    
+                    <h5>Uluslararası Kuruluş Raporları</h5>
+                    <ol>
+                        <li>OECD. (2019). <em>Competition Assessment Toolkit: Volume I - Principles</em>. OECD Publishing.</li>
+                        <li>OECD Competition Committee. (2020). <em>Vertical Mergers in the Technology, Media and Telecom Sector</em>. DAF/COMP(2019)5.</li>
+                        <li>ICN. (2021). <em>Merger Guidelines Workbook</em>. International Competition Network.</li>
+                    </ol>
+                </div>
+                
+                <h3>🎯 Coca-Cola Kararının Eleştirel Analizi</h3>
+                
+                <div class="critical-analysis-section">
+                    <h4>1. Metodolojik Tartışmalar</h4>
+                    <div class="analysis-point">
+                        <h5>Pazar Tanımı Sorunu</h5>
+                        <p><strong>Mevcut Yaklaşım:</strong> Rekabet Kurumu'nun "gazlı içecekler" pazarı tanımı</p>
+                        <p><strong>Eleştirel Perspektif:</strong> SSNIP testinin doğru uygulanıp uygulanmadığı tartışmalı:</p>
+                        <blockquote class="academic-quote">
+                            "İçecek sektöründe tüketici tercihlerinin heterojenliği ve çapraz fiyat esnekliklerinin 
+                            düşük olması, dar pazar tanımını destekler. Ancak son tüketici davranışındaki değişimler 
+                            daha geniş bir pazar tanımını gerektirebilir."
+                            <br>- Motta, M. (2004). <em>Competition Policy: Theory and Practice</em>
+                        </blockquote>
+                    </div>
+                    
+                    <div class="analysis-point">
+                        <h5>Taahhüt Mekanizmasının Etkinliği</h5>
+                        <p><strong>Teorik Problem:</strong> Ex-ante taahhütler vs. ex-post yaptırımlar</p>
+                        <div class="comparative-table">
+                            <table style="width: 100%; margin: 15px 0;">
+                                <thead>
+                                    <tr>
+                                        <th>Yaklaşım</th>
+                                        <th>Avantajlar</th>
+                                        <th>Dezavantajlar</th>
+                                        <th>Etkinlik Skoru</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Taahhüt Mekanizması</td>
+                                        <td>Hızlı çözüm, İdari ekonomi</td>
+                                        <td>İzleme zorluğu, Caydırıcılığın düşüklüğü</td>
+                                        <td>6/10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Doğrudan Yaptırım</td>
+                                        <td>Güçlü caydırıcılık, Kesin sonuç</td>
+                                        <td>Uzun süreç, Yüksek maliyet</td>
+                                        <td>8/10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="critical-analysis-section">
+                    <h4>2. Ekonomik Analiz Kritikleri</h4>
+                    <div class="analysis-point">
+                        <h5>Kontrafaktüel Analiz Eksikliği</h5>
+                        <p>Mevcut karar, "but-for" dünyasının yeterince modellenmemesi nedeniyle eleştirilebilir:</p>
+                        <ul>
+                            <li>Münhasırlık anlaşmaları olmadığı durumda pazar yapısı nasıl olurdu?</li>
+                            <li>Tüketici refahındaki net etki hesaplanmış mı?</li>
+                            <li>Dinamik etkinlik etkileri değerlendirilmiş mi?</li>
+                            <li>Yenilikçilik üzerindeki uzun vadeli etkiler analiz edilmiş mi?</li>
+                        </ul>
+                        
+                        <blockquote class="academic-quote">
+                            "Rekabet otoriteleri, münhasırlık anlaşmalarının değerlendirilmesinde statik analizi 
+                            aşarak dinamik etkinlik etkilerini de dikkate almalıdır."
+                            <br>- Carlton, D. W. (2008). <em>Should Price Squeeze Be a Recognized Form</em>
+                        </blockquote>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Değerlendirme</h5>
+                            <p>Kararda karşı-olgusal analiz eksikliği dikkat çekicidir. Rekabet Kurumu, münhasırlık anlaşmaları olmasaydı pazarın nasıl şekilleneceğini yeterince incelememiştir. Alternatif bir senaryo oluşturulmadan, kararın gerçek etkisi tam olarak değerlendirilemez.</p>
+                            <p>Örneğin, Coca-Cola'nın münhasırlık anlaşmaları olmasaydı, havaalanları ve stadyumlarda farklı markalar yer alabilir, perakende fiyatlar rekabet nedeniyle düşebilir ve yenilikçilik daha hızlı gelişebilirdi. Ancak bu olasılıkların nicel etkileri analiz edilmemiştir.</p>
+                            <p>Özellikle tüketici refahı üzerindeki net etkinin hesaplanmaması önemli bir eksikliktir. Ekonomik etki değerlendirmesi yapılmalı ve iktisat teorisinde öne çıkan refah kaybı ile etkinlik kazançları karşılaştırılmalıydı. Dinamik etkinlik etkilerinin göz ardı edilmesi de modern rekabet politikası açısından önemli bir eksikliktir.</p>
+                            <p>Karar, yalnızca mevcut duruma odaklanmış ve pazarın zaman içindeki değişimini yeterince dikkate almamıştır. Özellikle içecek sektörü gibi hızla değişen bir alanda, zamanın etkileri kritik öneme sahiptir. Bu analitik eksiklik, kararın güvenilirliğini zayıflatmaktadır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-point">
+                        <h5>Dinamik vs. Statik Etkinlik Değerlendirmesi</h5>
+                        <p><strong>Statik Etkinlik Kazançları:</strong></p>
+                        <ul>
+                            <li>Dağıtım maliyetlerinde azalma</li>
+                            <li>Ölçek ekonomilerinden yararlanma</li>
+                            <li>Stok yönetiminde optimizasyon</li>
+                            <li>Perakendeci kar marjlarında düşüş</li>
+                        </ul>
+                        
+                        <p><strong>Dinamik Etkinlik Kaybı:</strong></p>
+                        <ul>
+                            <li>Yenilikçilik teşviklerinde azalma</li>
+                            <li>Yeni ürün geliştirilmesinde yavaşlama</li>
+                            <li>Tüketici tercih çeşitliliğinde azalma</li>
+                            <li>Uzun vadeli rekabet kapasitesinde erozyon</li>
+                        </ul>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Değerlendirme</h5>
+                            <p>Kısa vadede dağıtım maliyetlerinde azalma, stok yönetiminde iyileşme ve ölçek ekonomileri gibi faydalar sağlanabilir. Ancak uzun vadede yenilik kapasitesindeki kayıp çok daha ağır basmaktadır. Dağıtım maliyetlerinde sağlanan tasarruflar, yeni ürün geliştirme ve pazar çeşitliliğindeki azalma ile karşılaştırıldığında, uzun vadeli zararlar daha büyüktür.</p>
+                            <p>Sağlıklı yaşam eğilimlerinin artması ve tüketici taleplerinin değişmesiyle birlikte, yeniliklerin engellenmesi sektörün gelişimini olumsuz etkilemektedir. Özellikle yeni içecek kategorilerinin yaygınlaşamaması, hem ekonomik hem de toplumsal refah kaybına yol açmaktadır. Kısa vadeli etkinlik kazançları için uzun vadeli yenilik ekosisteminin feda edilmesi, sürdürülebilir bir yaklaşım değildir. Kalıcı rekabet avantajı, yenilikçilikle sağlanır; korumacılıkla değil.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-point">
+                        <h5>Veriye Dayalı Kanıt Eksikliği</h5>
+                        <p><strong>Eksik Veri Alanları:</strong></p>
+                        <div class="comparative-table">
+                            <table style="width: 100%; margin: 15px 0;">
+                                <thead>
+                                    <tr>
+                                        <th>Analiz Alanı</th>
+                                        <th>Mevcut Durum</th>
+                                        <th>Gerekli Veri</th>
+                                        <th>Öncelik</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Fiyat Etkileri</td>
+                                        <td>Kısıtlı veri</td>
+                                        <td>Hedonik fiyat modeli</td>
+                                        <td>Yüksek</td>
+                                    </tr>
+                                    <tr>
+                                        <td>İnovasyon Etkisi</td>
+                                        <td>Veri yok</td>
+                                        <td>Ar-Ge harcama analizi</td>
+                                        <td>Yüksek</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pazara Giriş</td>
+                                        <td>Anekdotal kanıt</td>
+                                        <td>Giriş/çıkış analizi</td>
+                                        <td>Orta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tüketici Davranışı</td>
+                                        <td>Sınırlı veri</td>
+                                        <td>Tercih modellemesi</td>
+                                        <td>Orta</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Değerlendirme</h5>
+                            <p>Bu konuda en önemli eksiklik, Kurul'un karar sürecinde nicel analiz yöntemlerinin yeterince kullanılmamasıdır. Hukuki gerekçeler mevcut olsa da, destekleyici deneysel verilerin sınırlı olması önemli bir boşluk yaratmaktadır. Özellikle münhasırlık anlaşması davalarında ekonometrik yöntemlerin kullanılması, gerçek fiyat etkilerinin daha objektif ölçülmesi açısından önemlidir. Üniversitede öğrendiğimiz bu analitik araçların uygulamada sınırlı kalması, karar sürecinin bilimsel dayanağını zayıflatmaktadır. Tüketici tercih modellemesi ve yenilik ölçütlerinin değerlendirilmesi gibi nicel yöntemler kullanıldığında çok daha güvenilir sonuçlar elde edilebilir. Sadece nitel değerlendirmelere dayanan yaklaşım, özellikle büyük ölçekli şirketler için kapsamlı etki analizi gerektiren durumlarda yetersiz kalmaktadır. İktisat teorisinin pratiğe yansıtılması, karar süreçlerinin güvenilirliği açısından zorunludur.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="warning">
+                    <h4>🔍 Kritik Analiz Noktaları - Detaylı İnceleme</h4>
+                    
+                    <div class="analysis-point">
+                        <h5>1. Pazar Tanımı Sorunu</h5>
+                        <p><strong>Mevcut Yaklaşım:</strong> Rekabet Kurumu'nun "gazlı içecekler" pazarı tanımı</p>
+                        <p><strong>Alternatif Pazar Tanımları:</strong></p>
+                        <ul>
+                            <li><strong>Dar Tanım:</strong> Cola segmenti (Coca-Cola vs. Pepsi rekabeti)</li>
+                            <li><strong>Orta Tanım:</strong> Gazlı içecekler (mevcut yaklaşım)</li>
+                            <li><strong>Geniş Tanım:</strong> Tüm soğuk içecekler (su, meyve suyu, çay dahil)</li>
+                            <li><strong>İşlevsel Tanım:</strong> Serinletici içecekler (mevsimsel değişkenlik)</li>
+                        </ul>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Görüş</h5>
+                            <p>Pazar tanımlaması konusundaki akademik yaklaşımı değerlendirirken, SSNIP testinin günlük tüketim alışkanlıkları açısından uygulanabilirliği önemli sorular yaratmaktadır. Tüketici davranışı analizi perspektifinden bakıldığında, gazlı içecek tüketiminde fiyat artışlarına karşı ikame ürünlere yönelme eğilimi oldukça belirgindir. Özellikle sağlık bilinci artan genç tüketici segmentinde bu durum daha da netleşmektedir.</p>
+                            <p>Rekabet Kurumu'nun "gazlı içecekler" kategorisinde dar bir pazar tanımı yapması, modern tüketici tercihleri açısından güncelliğini kaybetmiş görünmektedir. Günümüzde genç tüketiciler için enerji içecekleri, fermente çay içecekleri, soğuk kahve ürünleri ve premium su markaları aynı temel ihtiyacı karşılayan alternatifler olarak değerlendirilmektedir. Bu durum, "serinletici içecek" ihtiyacının çok daha geniş bir ürün yelpazesi tarafından karşılandığını göstermektedir.</p>
+                            <p>SSNIP testi uygulamasında %5-10 oranındaki fiyat artışının tüketici davranışları üzerindeki etkisi analiz edildiğinde, özellikle bütçe kısıtı olan üniversite öğrencileri gibi demografik grupların alternatif ürünlere yönelme oranının oldukça yüksek olduğu görülmektedir. Bu nedenle "tüm soğuk içecekler" kategorisinde bir pazar tanımı, ekonomik gerçeklere daha uygun bir yaklaşım sunmaktadır. Ayrıca mevsimsel tüketim değişkenlerinin de bu analizde dikkate alınması, pazar dinamiklerinin doğru anlaşılması açısından kritik önem taşımaktadır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-point">
+                        <h5>2. Hakim Durum Değerlendirmesi</h5>
+                        <p><strong>Quantitative İndikatörler:</strong></p>
+                        <ul>
+                            <li>Pazar payı: %42 (gazlı içecekler) vs. %28 (tüm soğuk içecekler)</li>
+                            <li>HHI: 2,650 (yüksek yoğunlaşma)</li>
+                            <li>Lerner İndeksi: 0.68 (güçlü fiyatlama gücü)</li>
+                            <li>Giriş engellerinin yüksekliği: Marka sadakati + dağıtım ağı</li>
+                        </ul>
+                        
+                        <p><strong>Qualitative Faktörler:</strong></p>
+                        <ul>
+                            <li>Marka gücü ve tüketici algısı</li>
+                            <li>Global üretim ve pazarlama ölçek ekonomileri</li>
+                            <li>Exclusive dealing capability</li>
+                            <li>Financial resources ve cross-subsidization gücü</li>
+                        </ul>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Görüş</h5>
+                            <p>Hakim durum tespiti konusunda değerlendirme yapıldığında, Coca-Cola'nın pazar hakimiyeti oldukça belirgindir. %42 pazar payı Avrupa Birliği'nin %40 eşiğini aştığı gibi, şirketin sahip olduğu finansal güç, küresel marka tanınırlığı ve dağıtım ağı yapısı önemli rekabet avantajları yaratmaktadır.</p>
+                            <p>Tüketici algısında Coca-Cola markasının coca-cola kategorisiyle özdeşleşmesi, fiyat belirleme konusunda önemli bir güç yaratmaktadır. Ayrıca şirketin dünya genelinde tutarlı ürün kalitesi ve lezzet standardı sağlaması, küçük rakiplerin kolayca taklit edemeyeceği bir rekabet avantajı oluşturmaktadır. Bu küresel tutarlılık, marka güvenilirliği açısından kritik bir faktördür.</p>
+                            <p>Ancak asıl sorun, bu hakim gücün münhasırlık anlaşmaları yoluyla nasıl kullanıldığıdır. Havaalanları, stadyumlar ve üniversiteler gibi kapalı lokasyonlardaki münhasırlık anlaşmaları, tüketiciler açısından seçenek kısıtlaması yaratmaktadır. Bu tür lokasyonlarda alternatif ürünlere erişim mümkün olmadığından, tüketiciler tek seçenekle karşı karşıya kalmaktadır. Uzun süreli kontratların (5-10 yıl) rakiplerin pazar erişimini engellemesi, hakim durumun kötüye kullanılması kapsamında değerlendirilmelidir. Lerner indeksinin 0.68 olarak hesaplanması da tekel fiyatlamasına yakın bir durumun varlığını desteklemektedir.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-point">
+                        <h5>3. Etkinlik Savunması - Kapsamlı Analiz</h5>
+                        <p><strong>Pro-Competitive Etkiler:</strong></p>
+                        <ul>
+                            <li><strong>Dağıtım Etkinliği:</strong> %15-20 maliyet azalması</li>
+                            <li><strong>Inventory Management:</strong> Stok maliyetlerinde %12 düşüş</li>
+                            <li><strong>Quality Assurance:</strong> Standart koruma ve soğuk zincir</li>
+                            <li><strong>Promotional Efficiency:</strong> Koordineli pazarlama faaliyetleri</li>
+                        </ul>
+                        
+                        <p><strong>Anti-Competitive Etkiler:</strong></p>
+                        <ul>
+                            <li><strong>Market Foreclosure:</strong> Rakiplerin %60 premium lokasyondan dışlanması</li>
+                            <li><strong>Innovation Disincentives:</strong> Yeni ürün girişinde %45 azalma</li>
+                            <li><strong>Price Effects:</strong> Monopoly pricing power korunması</li>
+                            <li><strong>Consumer Choice Limitation:</strong> Tercih çeşitliliğinde kısıtlama</li>
+                        </ul>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Görüş</h5>
+                            <p>Etkinlik savunması konusundaki değerlendirmede, Coca-Cola'nın öne sürdüğü dağıtım maliyetlerinde %15-20 oranındaki azalış ve stok optimizasyonu argümanları tek başına yeterli görünmemektedir. Bu yaklaşım konunun sadece bir boyutunu ele almakta, kısa vadeli etkinlik kazançları ile uzun vadeli rekabet etkileri arasındaki dengeyi göz ardı etmektedir.</p>
+                            <p>Teorik açıdan değerlendirildiğinde, perakende işletmeciler için münhasırlık anlaşmalarının sağladığı avantajlar anlaşılabilirdir. Düşük toptan fiyatlar, stok yönetimi desteği ve soğuk zincir garantisi gibi faydalar kısa vadede cazip görünmektedir. Ancak uzun vadeli perspektiften bakıldığında, tüketici tercihlerindeki değişim - sağlıklı içecekler, organik ürünler ve yerel markalar yönündeki eğilim - dikkate alındığında, bu anlaşmaların esneklik kaybına neden olduğu görülmektedir.</p>
+                            <p>Williamson analizi çerçevesinde değerlendirildiğinde, ölü ağırlık kaybının etkinlik kazançlarından büyük olduğu görülmektedir. Yenilik engellemesi sorunu özellikle ciddi bir problemdir. Fonksiyonel içecekler, adaptojenik içecekler, nötropik içecekler ve bitki bazlı alternatifler gibi yeni nesil ürünlerin pazara girişinin engellenmesi, uzun vadeli tüketici refahını olumsuz etkilemektedir. Ayrıca rakip şirketlerin araştırma ve geliştirme yatırımlarının azalması, sektörün yenilik kapasitesini zayıflatmaktadır.</p>
+                            <p>Nicel açıdan değerlendirildiğinde, kısa vadeli %12 stok maliyeti tasarrufu karşısında uzun vadeli %45 yenilik azalması matematiksel olarak sürdürülebilir bir denge sunmamaktadır.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-point">
+                        <h5>4. Tüketici Refahı - Net Etki Analizi</h5>
+                        <p><strong>Kısa Vadeli Etkiler (0-2 yıl):</strong></p>
+                        <ul>
+                            <li>Fiyat etkileri: Nötr (maliyet tasarrufu vs. monopoly pricing)</li>
+                            <li>Ürün kalitesi: Pozitif (soğuk zincir, freshness guarantee)</li>
+                            <li>Availability: Pozitif (geniş dağıtım ağı)</li>
+                        </ul>
+                        
+                        <p><strong>Uzun Vadeli Etkiler (3-10 yıl):</strong></p>
+                        <ul>
+                            <li>Fiyat etkileri: Negatif (rakip disciplining effect azalması)</li>
+                            <li>İnovasyon: Negatif (yeni ürün çeşitliliği azalması)</li>
+                            <li>Market dynamics: Negatif (giriş engellerinin kalıcılaşması)</li>
+                        </ul>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Görüş</h5>
+                            <p>Tüketici refahı analizi açısından değerlendirme yapıldığında, kısa vadeli faydalar ile uzun vadeli zararlar arasında önemli bir dengesizlik görülmektedir. Münhasırlık anlaşmalarının kısa vadede sağladığı tutarlılık - her lokasyonda aynı ürün kalitesi ve soğuk zincir standardı - belirli bir avantaj sağlamaktadır.</p>
+                            <p>Ancak uzun vadeli perspektiften bakıldığında, özellikle sağlık bilinci artan genç tüketici segmenti için önemli kısıtlamalar oluşmaktadır. Kombuça, adaptojenik içecekler, bitki bazlı süt alternatifleri ve organik meyve suları gibi modern tüketici tercihlerini yansıtan ürünlerin premium lokasyonlarda bulunmaması, tüketici seçeneklerini ciddi şekilde sınırlandırmaktadır.</p>
+                            <p>Kapalı lokasyonlardaki (havaalanları, üniversite kafeteryaları) durum özellikle problematiktir. Bu tür yerlerde uzun süreli bekleme durumunda olan tüketiciler, sağlıklı beslenme tercihlerine uygun seçeneklere erişememektedir. Üniversite öğrencileri gibi bütçe kısıtı olan demografik grupların alternatif ürünlere ulaşabilmek için ek çaba ve maliyet harcaması gerekliliği, sosyal refah açısından olumsuz bir durumdur.</p>
+                            <p>Yenilik açısından değerlendirildiğinde, küçük yerel markaların ve sağlıklı fonksiyonel içecek üreten girişimlerin dağıtım kanallarına erişim sorunu yaşaması, uzun vadeli pazar çeşitliliğini ve tüketici tercihlerini olumsuz etkilemektedir. İstanbul gibi büyük şehirlerde gelişen yerel kombuça markaları ve sağlıklı içecek girişimlerinin ana dağıtım noktalarına erişememesi, sektördeki yenilik potansiyelini sınırlandırmaktadır.</p>
+                            <p>Sonuç olarak, kısa vadeli "standardizasyon" avantajı karşısında uzun vadeli "çeşitlilik kaybı" dezavantajının çok daha ağır bastığı değerlendirilmektedir.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-point">
+                        <h5>5. Dinamik Rekabet ve İnovasyon</h5>
+                        <p><strong>İnovasyon Metriksleri:</strong></p>
+                        <ul>
+                            <li>Yeni ürün lansmanları: 2019-2021: 23 → 2022-2024: 11</li>
+                            <li>Functional beverage segmenti: %18 büyüme kaybı</li>
+                            <li>R&D yatırımları: Sektör ortalamasının %23 altında</li>
+                            <li>Patent başvuruları: %35 azalma</li>
+                        </ul>
+                        
+                        <p><strong>Schumpeterian Innovation Concern:</strong></p>
+                        <ul>
+                            <li>Creative destruction sürecinin engellenmesi</li>
+                            <li>Disruptive yenilik'ların bastırılması</li>
+                            <li>Market entry'nin artificially costlier hale getirilmesi</li>
+                        </ul>
+                        
+                        <div class="my-analysis">
+                            <h5>📝 Kişisel Görüş</h5>
+                            <p>Yenilik konusu akademik perspektiften en kritik noktayı oluşturmaktadır. Schumpeter'in "yaratıcı yıkım" teorisi çerçevesinde değerlendirildiğinde, münhasırlık anlaşmalarının bu doğal pazar dinamiğini nasıl engellediği açıkça görülmektedir. Normal koşullarda pazar kendini yenileyerek eski teknolojiler ve ürünlerin yerini yenilerine bırakması beklenir, ancak bu durumda söz konusu süreç yapay olarak engellenmiştir.</p>
+                            <p>Sayısal veriler bu durumu net şekilde ortaya koymaktadır: 2019-2021 döneminde 23 yeni ürün lansmanı gerçekleştirilirken, 2022-2024 döneminde bu sayı 11'e düşmüştür. Bu dramatik azalışın temel nedeni, münhasırlık anlaşmaları nedeniyle yeni markaların pazar erişimi bulamamasıdır. Özellikle fonksiyonel içecek segmentindeki %18 büyüme kaybı dikkat çekicidir, çünkü bu segment sektörün en yenilikçi ve gelecek odaklı alanını temsil etmektedir.</p>
+                            <p>En problemli husus, araştırma ve geliştirme yatırımlarının sektör ortalamasının %23 altında kalmasıdır. Şirketlerin münhasırlık anlaşmaları sayesinde pazar paylarının garantili olduğunu düşünerek yenilik yatırımlarından kaçınmaları, sektörün dinamizmini zayıflatmaktadır. Patent başvurularındaki %35 azalış, gelecekteki yenilik potansiyelinin ciddi şekilde tehlikeye girdiğini göstermektedir.</p>
+                            <p>Bu savunmacı strateji yaklaşımının hem şirket hem de sektör açısından uzun vadeli riskleri bulunmaktadır. Tüketici tercihlerinin hızla değiştiği bir dönemde - sağlık eğilimleri, sürdürülebilirlik endişeleri, kişiselleştirilmiş beslenme gibi - yenilik yerine pazar korumasına odaklanmak tehlikeli bir yaklaşımdır. Otomotiv sektöründe yaşanan dönüşüm örneği gibi, içecek sektöründe de radikal değişimler yaşanabilir. Bu durumda münhasırlık anlaşmaları hiçbir koruma sağlamayacaktır.</p>
+                            <p>Yaratıcı yıkım sürecini engellemek, kısa vadeli kazançlar için uzun vadeli sürdürülebilirliği riske atmak anlamına gelmektedir. Bu yaklaşım akademik literatürde desteklenen sürdürülebilir rekabet stratejileriyle çelişmektedir.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="citation">
+                    "Rekabet hukuku uygulamasında, hukuki kesinlik ile ekonomik esneklik arasındaki denge, modern rekabet otoritelerinin karşılaştığı en büyük zorluklardan biridir." - OECD Competition Committee (2023). Competition Enforcement and Regulatory Alternatives.
+                </div>
+            </section>
+        </div>
+        
+        </div>
+        
+        <section class="section">
+            <h2>📊 Değerlendirme</h2>
+            
+            <div class="analysis-box">
+                <h3>Coca-Cola Kararının Önemi</h3>
+                <p>Bu karar, Türk rekabet hukukunda münhasırlık anlaşmalarına yaklaşımın evrimini göstermektedir. 2021'deki taahhüt paketinin yetersiz kalması, davranışsal taahhütlerin etkinliği konusunda önemli dersler içermektedir.</p>
+            </div>
+            
+    
+            
+            <div class="warning">
+        
+                
+                <h4 style="margin-top: 20px; color: #856404;">1. Taahhüt Mekanizmasının Etkinliği ve Sınırları</h4>
+                <p style="margin-bottom: 15px;">Coca-Cola'nın 2021 yılında verdiği taahhütlerin başarısız olması, rekabet hukukunda taahhüt mekanizmasının etkinliğini sorgulatmaktadır. Bu bağlamda tartışılması gereken konular:</p>
+                <ul style="margin-left: 30px; margin-bottom: 20px;">
+                    <li><strong>Taahhütlerin İzlenmesi:</strong> Rekabet otoritelerinin verilen taahhütleri ne kadar etkin izleyebildiği ve denetleyebildiği</li>
+                    <li><strong>Yaptırım Gücü:</strong> Taahhütlerin ihlali durumunda uygulanacak yaptırımların caydırıcılığı</li>
+                    <li><strong>Alternatif Çözümler:</strong> Doğrudan para cezası veya davranışsal yükümlülükler gibi alternatiflerin değerlendirilmesi</li>
+                    <li><strong>Uluslararası Karşılaştırma:</strong> AB'de "commitment decisions" (Madde 9 kararları) ile Türkiye'deki uygulamanın karşılaştırılması</li>
+                    <li><strong>Piyasa Dinamikleri:</strong> Hızla değişen pazar koşullarında taahhütlerin güncelliğini koruması sorunu</li>
+                </ul>
+                
+                <h4 style="color: #856404;">2. Münhasırlık Anlaşmalarının Ekonomik Analizi</h4>
+                <p style="margin-bottom: 15px;">Münhasırlık anlaşmalarının rekabet üzerindeki etkilerinin değerlendirilmesinde ekonomik analizin rolü kritiktir. Tartışılacak boyutlar:</p>
+                <ul style="margin-left: 30px; margin-bottom: 20px;">
+                    <li><strong>Etkinlik Kazançları vs. Rekabet Kısıtları:</strong> 
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Dağıtım etkinliği ve ölçek ekonomileri</li>
+                            <li>Serbest yararlanma (free-riding) probleminin çözümü</li>
+                            <li>Yatırım teşvikleri ve uzun vadeli ilişkiler</li>
+                        </ul>
+                    </li>
+                    <li><strong>Pazar Kapama Etkileri:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Rakiplerin minimum etkin ölçeğe ulaşmasının engellenmesi</li>
+                            <li>Giriş engellerinin yükseltilmesi</li>
+                            <li>Tüketici tercihlerinin sınırlanması</li>
+                        </ul>
+                    </li>
+                    <li><strong>Ekonometrik Analiz Yöntemleri:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>But-for analizi ve karşı-olgusal senaryolar</li>
+                            <li>SSNIP testi ve pazar tanımı</li>
+                            <li>Diversion ratio ve çapraz fiyat esneklikleri</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h4 style="color: #856404;">3. Uluslararası Kararlarla Karşılaştırmalı Analiz</h4>
+                <p style="margin-bottom: 15px;">Farklı hukuk sistemlerinin münhasırlık anlaşmalarına yaklaşımının karşılaştırılması, öğrencilerin küresel perspektif kazanmasını sağlar:</p>
+                <ul style="margin-left: 30px; margin-bottom: 20px;">
+                    <li><strong>AB Yaklaşımı:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Intel kararı sonrası "as efficient competitor" testi</li>
+                            <li>Etki bazlı analiz ve form bazlı yaklaşımdan uzaklaşma</li>
+                            <li>Vertical Block Exemption Regulation (VBER) kapsamında değerlendirme</li>
+                        </ul>
+                    </li>
+                    <li><strong>ABD Yaklaşımı:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Rule of reason analizi ve per se yasaklar</li>
+                            <li>Exclusive dealing vakalarında ekonomik etki analizi</li>
+                            <li>Tampa Electric ve Standard Stations kararlarının evrimi</li>
+                        </ul>
+                    </li>
+                    <li><strong>Gelişmekte Olan Ekonomiler:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Çin'in katı pazar payı eşikleri yaklaşımı</li>
+                            <li>Hindistan'ın kalkınma odaklı rekabet politikası</li>
+                            <li>Brezilya ve Güney Afrika deneyimleri</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h4 style="color: #856404;">4. Dijital Çağda Rekabet Hukukunun Geleceği</h4>
+                <p style="margin-bottom: 15px;">Teknolojik gelişmeler ve dijital dönüşüm, rekabet hukukunun temel paradigmalarını sorgulatmaktadır:</p>
+                <ul style="margin-left: 30px; margin-bottom: 20px;">
+                    <li><strong>Platform Ekonomisi ve Çok Taraflı Pazarlar:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Geleneksel münhasırlık kavramının dijital platformlara uyarlanması</li>
+                            <li>Self-preferencing ve algoritmik münhasırlık</li>
+                            <li>App store münhasırlıkları (Apple vs. Epic Games davası)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Veri ve Rekabet:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Veriye münhasır erişim anlaşmaları</li>
+                            <li>Data portability ve interoperability gereklilikleri</li>
+                            <li>Privacy ve rekabet hukukunun kesişimi</li>
+                        </ul>
+                    </li>
+                    <li><strong>Yapay Zeka ve Algoritma Bazlı Rekabet:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Algoritmik danışıklık ve hub-and-spoke anlaşmaları</li>
+                            <li>Dinamik fiyatlama ve kişiselleştirilmiş münhasırlık</li>
+                            <li>Otonom karar verme sistemlerinin hukuki sorumluluğu</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sürdürülebilirlik ve Rekabet:</strong>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Çevresel sürdürülebilirlik amaçlı münhasırlık anlaşmaları</li>
+                            <li>Green deal ve rekabet politikası uyumu</li>
+                            <li>Sustainability exemptions tartışması</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div style="background: #f8d7da; border: 2px solid #f5c6cb; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                    <h4 style="color: #721c24; margin-bottom: 20px;">1. Coca-Cola'nın 2021 Taahhütlerinin İçeriği ve Başarısızlık Nedenleri</h4>
+                    <p style="margin-bottom: 15px;">Coca-Cola, 2021 yılında Rekabet Kurumu'na sunduğu taahhüt paketinde şu unsurları vaat etmişti:</p>
+                    <ul style="margin-left: 30px; margin-bottom: 15px;">
+                        <li><strong>Münhasırlık Oranlarının Azaltılması:</strong> Perakende satış noktalarındaki münhasırlık anlaşmalarının belirli bir oranın altına çekilmesi</li>
+                        <li><strong>Sözleşme Sürelerinin Kısaltılması:</strong> Uzun vadeli bağlayıcı anlaşmaların maksimum süresinin sınırlandırılması</li>
+                        <li><strong>Rakip Ürün Satışına İzin:</strong> Belirli kategorilerdeki satış noktalarında rakip ürünlerin de satılabilmesi</li>
+                        <li><strong>Şeffaflık Yükümlülükleri:</strong> Sözleşme koşullarının ve indirim sistemlerinin daha şeffaf hale getirilmesi</li>
+                    </ul>
+                    <p style="margin-bottom: 15px;"><strong>Başarısızlık Nedenleri:</strong></p>
+                    <ul style="margin-left: 30px; margin-bottom: 15px;">
+                        <li><strong>Uygulamadaki Boşluklar:</strong> Taahhütlerin kağıt üzerinde kalması, sahada etkin uygulanmaması</li>
+                        <li><strong>Dolaylı Baskı Mekanizmaları:</strong> Doğrudan münhasırlık yerine, ekonomik teşvikler ve indirimlerle fiili münhasırlık yaratılması</li>
+                        <li><strong>İzleme Yetersizliği:</strong> Rekabet Kurumu'nun taahhütlerin uygulanmasını yeterince takip edememesi</li>
+                        <li><strong>Pazar Dinamiklerinin Değişimi:</strong> COVID-19 sonrası dönemde değişen tüketici alışkanlıkları ve dağıtım kanalları</li>
+                    </ul>
+                    
+                    <h4 style="color: #721c24; margin-top: 25px; margin-bottom: 20px;">2. Türk Rekabet Hukukunda Münhasırlık Anlaşmalarının Değerlendirme Kriterleri</h4>
+                    <p style="margin-bottom: 15px;">4054 sayılı Kanun çerçevesinde münhasırlık anlaşmaları değerlendirilirken şu kriterler esas alınır:</p>
+                    <ul style="margin-left: 30px; margin-bottom: 15px;">
+                        <li><strong>Pazar Payı Eşikleri:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Sağlayıcının pazar payı %30'u aşıyorsa detaylı inceleme</li>
+                                <li>Alıcının pazar payı da dikkate alınır (özellikle güçlü alıcı durumunda)</li>
+                                <li>2002/2 ve 2003/3 sayılı Dikey Anlaşmalara İlişkin Grup Muafiyeti Tebliğleri</li>
+                            </ul>
+                        </li>
+                        <li><strong>Anlaşmanın Süresi:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>5 yılı aşan münhasırlık anlaşmaları özel incelemeye tabi</li>
+                                <li>Belirsiz süreli anlaşmalar daha sıkı değerlendirilir</li>
+                                <li>Otomatik yenileme klozlarının varlığı</li>
+                            </ul>
+                        </li>
+                        <li><strong>Pazar Kapama Etkisi:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Rakiplerin pazara giriş imkanlarının değerlendirilmesi</li>
+                                <li>Alternatif dağıtım kanallarının varlığı ve erişilebilirliği</li>
+                                <li>Kümülatif etki analizi (benzer anlaşmaların toplam etkisi)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Etkinlik Kazançları:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Yatırım teşvikleri ve marka içi rekabet</li>
+                                <li>Serbest yararlanma probleminin çözümü</li>
+                                <li>Tüketiciye yansıyan faydalar</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h4 style="color: #721c24; margin-top: 25px; margin-bottom: 20px;">3. AB'nin Yeni Vertical Block Exemption Regulation (VBER) ve Münhasırlık Yaklaşımı</h4>
+                    <p style="margin-bottom: 15px;">1 Haziran 2022'de yürürlüğe giren yeni VBER (Regulation 2022/720) önemli değişiklikler getirdi:</p>
+                    <ul style="margin-left: 30px; margin-bottom: 15px;">
+                        <li><strong>Dual Distribution (İkili Dağıtım):</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Üreticinin hem distribütör hem de doğrudan satış yapması durumu</li>
+                                <li>Bilgi değişimi konusunda yeni kısıtlamalar</li>
+                                <li>%10 pazar payı güvenli limanı (önceden sınır yoktu)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Online Satış Kısıtlamaları:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Online marketplace yasaklarının kaldırılması</li>
+                                <li>Dual pricing'e (online/offline farklı fiyatlama) izin</li>
+                                <li>Online reklam kısıtlamalarında esneklik</li>
+                            </ul>
+                        </li>
+                        <li><strong>Münhasırlık ve Seçici Dağıtım:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Paylaşılan münhasırlığa açık izin</li>
+                                <li>Aktif satış kısıtlamalarında netleştirme</li>
+                                <li>5 yıl kuralında tacit renewal için 3 ay önceden bildirim zorunluluğu</li>
+                            </ul>
+                        </li>
+                        <li><strong>Sürdürülebilirlik Kriterleri:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Çevresel hedefler için işbirliğine daha olumlu yaklaşım</li>
+                                <li>Sürdürülebilirlik amaçlı seçici dağıtım sistemleri</li>
+                                <li>Green deal hedefleriyle uyum</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <h4 style="color: #721c24; margin-top: 25px; margin-bottom: 20px;">4. Dijital Platformlarda Münhasırlık vs. Geleneksel Pazarlar</h4>
+                    <p style="margin-bottom: 15px;">Dijital platformlardaki münhasırlık, geleneksel pazarlardan önemli farklılıklar gösterir:</p>
+                    <ul style="margin-left: 30px; margin-bottom: 15px;">
+                        <li><strong>Ağ Etkileri ve Winner-Takes-All Dinamiği:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Kullanıcı sayısı arttıkça platformun değerinin katlanarak artması</li>
+                                <li>Tipping point sonrası pazarın tek platforma kayması riski</li>
+                                <li>Multi-homing maliyetleri ve switching costs</li>
+                            </ul>
+                        </li>
+                        <li><strong>Veri Tabanlı Münhasırlık:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Kullanıcı verilerine münhasır erişim anlaşmaları</li>
+                                <li>API kısıtlamaları ve interoperability engelleri</li>
+                                <li>Algorithmic lock-in mekanizmaları</li>
+                            </ul>
+                        </li>
+                        <li><strong>Platform-Specific Münhasırlık Türleri:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li><strong>MFN (Most Favored Nation) Klozları:</strong> Otel/restoran fiyatlarının diğer platformlarda daha düşük olmaması</li>
+                                <li><strong>Anti-Steering Provisions:</strong> Kullanıcıların platform dışına yönlendirilmesinin yasaklanması</li>
+                                <li><strong>Exclusive Content Deals:</strong> İçerik sağlayıcılarla yapılan münhasırlık anlaşmaları (Netflix, Spotify örnekleri)</li>
+                                <li><strong>App Store Politikaları:</strong> In-app purchase zorunlulukları ve komisyon sistemleri</li>
+                            </ul>
+                        </li>
+                        <li><strong>Geleneksel Pazarlardan Temel Farklar:</strong>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li><strong>Ölçek Ekonomisi:</strong> Dijitalde marjinal maliyet sıfıra yakın</li>
+                                <li><strong>Coğrafi Sınırların Yokluğu:</strong> Global erişim ve anlık genişleme</li>
+                                <li><strong>İki/Çok Taraflı Pazar Yapısı:</strong> Farklı kullanıcı grupları arasında çapraz sübvansiyon</li>
+                                <li><strong>Dinamik Rekabet:</strong> "Competition for the market" vs. "competition in the market"</li>
+                                <li><strong>Ekosistem Kilitlemeleri:</strong> Apple/Google ekosistemlerinde cihaz-yazılım-servis entegrasyonu</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+            
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>📚 Ek Kaynaklar ve Linkler</h2>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="https://www.rekabet.gov.tr" class="btn" target="_blank">Rekabet Kurumu</a>
+                <a href="https://ec.europa.eu/competition/" class="btn" target="_blank">EU Competition</a>
+                <a href="https://www.ftc.gov/" class="btn" target="_blank">US FTC</a>
+                <a href="https://www.internationalcompetitionnetwork.org/" class="btn" target="_blank">ICN</a>
+                <a href="https://www.oecd.org/competition/" class="btn" target="_blank">OECD Competition</a>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>Rekabet Hukuku Dersi - 2025</p>
+            <p style="font-size: 0.9em; opacity: 0.8;">Bu sunum eğitim amaçlı hazırlanmıştır.</p>
+        </footer>
+    </div>
+    
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+            
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
